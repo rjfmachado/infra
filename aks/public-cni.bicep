@@ -103,7 +103,7 @@ param nodePools array = [
   // }
 ]
 
-resource aks 'Microsoft.ContainerService/managedClusters@2021-08-01' = {
+resource aks 'Microsoft.ContainerService/managedClusters@2021-09-01' = {
   name: name
   location: location
   tags: tags
@@ -127,7 +127,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2021-08-01' = {
   }
 }
 
-resource aksMaintenance 'Microsoft.ContainerService/managedClusters/maintenanceConfigurations@2021-03-01' = {
+resource aksMaintenance 'Microsoft.ContainerService/managedClusters/maintenanceConfigurations@2021-09-01' = {
   name: 'askmaintenance'
   parent: aks
   properties: {
